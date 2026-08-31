@@ -8,6 +8,7 @@ thing to ask anyone to trust.
 | App | Page |
 |---|---|
 | آقا میرزا (Agha Mirza) — Persian word puzzle | <https://faizahmaddae.github.io/topjow-legal/aghamirza/> |
+| Potionary — potion-sorting puzzle | <https://faizahmaddae.github.io/topjow-legal/potionary/> |
 
 Contact: support@topjow.org
 
@@ -15,6 +16,10 @@ Each app's source of truth is the `store/` folder of its own repository; the
 copy here exists so the page has a public URL for the Google Play and App Store
 listings. Edit there, then copy across and push.
 
-Potionary's policy still lives in its own `potionary-site` repository and is
-referenced by a live Play listing, so it has not been moved. Fold it in here
-only alongside a listing update.
+Potionary's page is trilingual — English, فارسی, العربية — and picks a language
+from the URL fragment: `#en`, `#fa`, `#ar`. That is done in the page itself, so
+it works from any path.
+
+**`potionary-site` must not be deleted until Potionary's own Play listing has
+been pointed here.** That app is published, and a published app whose privacy
+policy URL 404s is a policy violation, not a broken link.

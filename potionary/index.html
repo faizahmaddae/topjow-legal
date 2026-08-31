@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Potionary</title>
+<meta name="description" content="What Potionary collects, who collects it, and how to change it.">
+<meta name="robots" content="index, follow">
+<style>
+/* No external requests of any kind — no fonts, no analytics, no images off
+   this file. A privacy policy that phones a CDN to render is a bad joke, and
+   in the EU it is a bad joke that has been litigated. */
+:root {
+  color-scheme: light dark;
+  --ground: #FBFAF7;
+  --surface: #FFFFFF;
+  --line: #E4E1D8;
+  --ink: #191B33;
+  --muted: #5C6086;
+  --accent: #5B3FD1;
+  --mark: #C89A2B;
+  --radius: 14px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ground: #0D0F2B;
+    --surface: #14173C;
+    --line: #262A5C;
+    --ink: #E8EAF8;
+    --muted: #A2A7D2;
+    --accent: #A897FF;
+    --mark: #F2C14E;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+}
+:lang(fa), :lang(ar) {
+  font-family: "Vazirmatn", "SF Arabic", "Geeza Pro", "Segoe UI", Tahoma,
+    "Noto Naskh Arabic", "Noto Sans Arabic", sans-serif;
+  line-height: 1.95;
+}
+.wrap { max-width: 44rem; margin: 0 auto; padding: 2.5rem 1.25rem 5rem; }
+
+header { display: flex; flex-direction: column; gap: 1.5rem; }
+.mark { display: flex; align-items: center; gap: .7rem; }
+.mark svg { flex: none; }
+.mark b { font-size: 1.05rem; letter-spacing: .01em; }
+.mark span { color: var(--muted); font-size: .9rem; }
+
+nav { display: flex; flex-wrap: wrap; gap: .5rem; }
+nav button {
+  font: inherit;
+  font-size: .9rem;
+  padding: .4rem .9rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--muted);
+  cursor: pointer;
+}
+nav button[aria-current="true"] {
+  border-color: var(--accent);
+  color: var(--accent);
+  font-weight: 600;
+}
+nav button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+h1 { font-size: 1.9rem; line-height: 1.25; margin: 0; text-wrap: balance; }
+.date { color: var(--muted); font-size: .92rem; margin: .5rem 0 0; }
+.lede {
+  margin: 1.5rem 0 0;
+  padding: 1.1rem 1.25rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+.lede p { margin: 0; }
+h2 {
+  font-size: 1.12rem;
+  margin: 2.4rem 0 .6rem;
+  padding-top: 1.6rem;
+  border-top: 1px solid var(--line);
+  text-wrap: balance;
+}
+p, ul { margin: 0 0 1rem; }
+ul { padding-inline-start: 1.35rem; }
+li { margin-bottom: .35rem; }
+a { color: var(--accent); }
+strong { font-weight: 650; }
+.contact { font-size: 1.05rem; }
+footer {
+  margin-top: 3rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: .88rem;
+}
+[hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="mark">
+    <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true">
+      <rect x="13" y="3" width="8" height="4" rx="1.4" fill="var(--mark)"/>
+      <path d="M14 7h6v4.6l4.2 5.1A6 6 0 0 1 25.6 21v5.6A3.4 3.4 0 0 1 22.2 30H11.8A3.4 3.4 0 0 1 8.4 26.6V21a6 6 0 0 1 1.4-4.3L14 11.6Z"
+            fill="none" stroke="var(--mark)" stroke-width="1.6"/>
+      <path d="M8.4 19.5h17.2v7.1A3.4 3.4 0 0 1 22.2 30H11.8A3.4 3.4 0 0 1 8.4 26.6Z"
+            fill="var(--accent)" opacity=".75"/>
+    </svg>
+    <b>Potionary</b>
+  </div>
+  <nav aria-label="Language">
+    <button type="button" data-pick="en" lang="en">English</button>
+    <button type="button" data-pick="fa" lang="fa">فارسی</button>
+    <button type="button" data-pick="ar" lang="ar">العربية</button>
+  </nav>
+</header>
+
+<!-- ============================== ENGLISH ============================== -->
+<main id="doc-en" lang="en" dir="ltr">
+  <h1>Privacy Policy</h1>
+  <p class="date">Last updated: 24 August 2026</p>
+
+  <div class="lede">
+    <p>Potionary has no account, no sign-in and no server of ours. Your
+    progress is stored on your own device. Three things collect data: the
+    adverts that pay for the game, anonymous statistics about which levels
+    people finish, and automatic crash reports. All three are Google
+    services, and none of them ask you for anything about yourself.</p>
+  </div>
+
+  <h2>Advertising</h2>
+  <p>The app shows adverts supplied by <strong>Google AdMob</strong>. To select
+  and measure those adverts, Google collects:</p>
+  <ul>
+    <li>device and advertising identifiers;</li>
+    <li>approximate, city-level location, derived from your IP address;</li>
+    <li>how you interact with the app and with the adverts themselves.</li>
+  </ul>
+  <p>That data is collected by Google, not by us — we never receive it and
+  never store it. Google explains what it does with it in
+  <a href="https://policies.google.com/technologies/partner-sites">How Google
+  uses information from sites or apps that use our services</a>.</p>
+
+  <h2>Your choices</h2>
+  <ul>
+    <li><strong>In the app:</strong> open <strong>Settings → Privacy
+    options</strong> at any time. That reopens Google's own consent form,
+    where you can change or withdraw your consent for personalised
+    advertising.</li>
+    <li><strong>On iOS:</strong> the system asks for permission to track
+    before any personalised advert is shown. You can change your answer in
+    <strong>Settings → Privacy &amp; Security → Tracking</strong>.</li>
+    <li><strong>On Android:</strong> you can reset or delete your advertising
+    ID in <strong>Settings → Privacy → Ads</strong>.</li>
+  </ul>
+  <p>Withdrawing consent does not remove the adverts. It makes them
+  non-personalised.</p>
+
+  <h2>Statistics and crash reports</h2>
+  <p>Two more Google services are in the app, both under Firebase, and
+  neither of them identifies you:</p>
+  <ul>
+    <li><strong>Firebase Analytics</strong> — anonymous gameplay statistics.
+    Which level an attempt was on, how many moves it took, whether it was
+    finished or given up on, which power-ups were used, and whether an advert
+    was offered or shown around it. Times are recorded as ranges rather than
+    clock values and coin balances as ranges rather than exact numbers, so the
+    data cannot say when you played or precisely what you had.</li>
+    <li><strong>Firebase Crashlytics</strong> — automatic crash reports: what
+    failed and the sequence of code that led to it. This is how a bug that
+    only happens on one kind of phone gets found at all.</li>
+  </ul>
+  <p>Neither carries your name, your email, anything you typed, or any
+  identifier that follows you into a different app. They are used to make the
+  game better and for nothing else, and they are not used to target
+  advertising.</p>
+  <p>The developer still runs no server of their own and holds no file about
+  you. There is currently no switch inside the game to turn these two off;
+  uninstalling the app stops them.</p>
+
+  <h2>What is stored on your device</h2>
+  <p>Your level progress, stars, coins, power-ups and settings are stored
+  locally. Uninstalling the app deletes them.</p>
+  <p>On Android, the system's own <strong>Auto Backup</strong> may copy that
+  save file to <em>your</em> Google account so it returns when you reinstall.
+  That copy belongs to your Google account; the developer cannot see it or
+  retrieve it.</p>
+
+  <h2>Purchases</h2>
+  <p>Potionary offers one optional purchase, which removes the full-screen
+  adverts between levels. The transaction is handled entirely by Google Play
+  or the App Store. The app never sees your payment details, and none are
+  stored.</p>
+
+  <h2>Children</h2>
+  <p>Potionary is not directed at children under 13, and we do not knowingly
+  collect data from them.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the date at the top changes with it.</p>
+
+  <h2>Contact</h2>
+  <p class="contact"><a href="mailto:support@topjow.org">support@topjow.org</a></p>
+</main>
+
+<!-- ============================== PERSIAN ============================== -->
+<main id="doc-fa" lang="fa" dir="rtl" hidden>
+  <h1>سیاست حریم خصوصی</h1>
+  <p class="date">آخرین به‌روزرسانی: ۲ شهریور ۱۴۰۵ (۲۴ اوت ۲۰۲۶)</p>
+
+  <div class="lede">
+    <p>Potionary حساب کاربری، ورود و هیچ سروری از طرف ما ندارد. پیشرفت شما روی
+    دستگاه خودتان ذخیره می‌شود. سه چیز داده جمع می‌کنند: تبلیغ‌هایی که هزینهٔ
+    بازی را تأمین می‌کنند، آمار بی‌نامِ این‌که مردم کدام مرحله‌ها را تمام
+    می‌کنند، و گزارش خودکار خطاها. هر سه سرویس گوگل‌اند و هیچ‌کدام چیزی
+    دربارهٔ خودتان از شما نمی‌پرسند.</p>
+  </div>
+
+  <h2>تبلیغات</h2>
+  <p>اپلیکیشن تبلیغ‌هایی را نشان می‌دهد که <strong>Google AdMob</strong> فراهم
+  می‌کند. گوگل برای انتخاب و اندازه‌گیری این تبلیغ‌ها این‌ها را جمع می‌کند:</p>
+  <ul>
+    <li>شناسه‌های دستگاه و شناسهٔ تبلیغاتی؛</li>
+    <li>موقعیت تقریبی در حد شهر، که از نشانی IP شما به دست می‌آید؛</li>
+    <li>نحوهٔ کار کردن شما با بازی و با خودِ تبلیغ‌ها.</li>
+  </ul>
+  <p>این داده‌ها را گوگل جمع می‌کند، نه ما — ما هرگز آن‌ها را دریافت
+  نمی‌کنیم و ذخیره هم نمی‌کنیم. گوگل در
+  <a href="https://policies.google.com/technologies/partner-sites">«گوگل چطور
+  از اطلاعات سایت‌ها و اپلیکیشن‌هایی که از سرویس‌هایش استفاده می‌کنند بهره
+  می‌برد»</a> توضیح داده که با آن‌ها چه می‌کند.</p>
+
+  <h2>اختیارهای شما</h2>
+  <ul>
+    <li><strong>در خود بازی:</strong> هر وقت خواستید <strong>تنظیمات ←
+    گزینه‌های حریم خصوصی</strong> را باز کنید. این کار فرم رضایت خودِ گوگل را
+    دوباره باز می‌کند و می‌توانید رضایت‌تان برای تبلیغ شخصی‌سازی‌شده را عوض
+    کنید یا پس بگیرید.</li>
+    <li><strong>در iOS:</strong> سیستم پیش از نمایش هر تبلیغ شخصی‌سازی‌شده،
+    اجازهٔ ردیابی را می‌پرسد. پاسخ‌تان را در <strong>تنظیمات ← حریم خصوصی و
+    امنیت ← ردیابی</strong> می‌توانید عوض کنید.</li>
+    <li><strong>در اندروید:</strong> شناسهٔ تبلیغاتی‌تان را در
+    <strong>تنظیمات ← حریم خصوصی ← تبلیغات</strong> می‌توانید بازنشانی یا حذف
+    کنید.</li>
+  </ul>
+  <p>پس گرفتن رضایت، تبلیغ را حذف نمی‌کند؛ آن را غیرشخصی می‌کند.</p>
+
+  <h2>آمار و گزارش خطا</h2>
+  <p>دو سرویس دیگر گوگل هم در بازی هست، هر دو زیر Firebase، و هیچ‌کدام شما را
+  نمی‌شناسند:</p>
+  <ul>
+    <li><strong>Firebase Analytics</strong> — آمار بی‌نام از بازی: این‌که
+    تلاش روی کدام مرحله بوده، چند حرکت طول کشیده، تمام شده یا رها شده، کدام
+    ابزارها استفاده شده‌اند، و این‌که تبلیغی پیشنهاد یا نمایش داده شده یا نه.
+    زمان‌ها به‌جای ساعت دقیق به‌صورت بازه ثبت
+    می‌شوند و موجودی سکه هم به‌جای عدد دقیق به‌صورت بازه — یعنی این داده‌ها
+    نمی‌توانند بگویند شما چه وقتی بازی کرده‌اید یا دقیقاً چه داشته‌اید.</li>
+    <li><strong>Firebase Crashlytics</strong> — گزارش خودکار خطاها: این‌که چه
+    چیزی از کار افتاده و چه مسیری از کد به آن رسیده. تنها راه پیدا کردن
+    اشکالی است که فقط روی یک نوع گوشی پیش می‌آید.</li>
+  </ul>
+  <p>هیچ‌کدام نام شما، ایمیل‌تان، چیزی که تایپ کرده‌اید یا شناسه‌ای که شما را
+  تا اپلیکیشن دیگری دنبال کند با خود ندارند. این داده‌ها فقط برای بهتر کردن
+  بازی به کار می‌روند و برای هدف‌گیری تبلیغات استفاده نمی‌شوند.</p>
+  <p>توسعه‌دهنده همچنان هیچ سروری از خودش ندارد و هیچ پرونده‌ای از شما نگه
+  نمی‌دارد. در حال حاضر داخل بازی کلیدی برای خاموش کردن این دو وجود ندارد؛
+  حذف اپلیکیشن آن‌ها را متوقف می‌کند.</p>
+
+  <h2>چیزی که روی دستگاه شما ذخیره می‌شود</h2>
+  <p>پیشرفت مرحله‌ها، ستاره‌ها، سکه‌ها، ابزارها و تنظیمات‌تان به‌صورت محلی
+  ذخیره می‌شود. با حذف اپلیکیشن، این‌ها هم پاک می‌شوند.</p>
+  <p>در اندروید، <strong>پشتیبان‌گیری خودکارِ</strong> خودِ سیستم ممکن است این
+  فایل را در حساب گوگل <em>شما</em> کپی کند تا بعد از نصب دوباره برگردد. آن
+  کپی متعلق به حساب گوگل شماست؛ توسعه‌دهنده نه می‌تواند آن را ببیند و نه
+  بردارد.</p>
+
+  <h2>خرید</h2>
+  <p>Potionary یک خرید اختیاری دارد که تبلیغ‌های تمام‌صفحهٔ بین مرحله‌ها را
+  حذف می‌کند. کل تراکنش را Google Play یا App Store انجام می‌دهد. اپلیکیشن
+  هرگز اطلاعات پرداخت شما را نمی‌بیند و چیزی از آن ذخیره نمی‌شود.</p>
+
+  <h2>کودکان</h2>
+  <p>Potionary برای کودکان زیر ۱۳ سال ساخته نشده است و ما آگاهانه داده‌ای از
+  آن‌ها جمع نمی‌کنیم.</p>
+
+  <h2>تغییرها</h2>
+  <p>اگر این سیاست تغییر کند، تاریخ بالای صفحه هم با آن تغییر می‌کند.</p>
+
+  <h2>تماس</h2>
+  <p class="contact"><a href="mailto:support@topjow.org">support@topjow.org</a></p>
+</main>
+
+<!-- ============================== ARABIC =============================== -->
+<main id="doc-ar" lang="ar" dir="rtl" hidden>
+  <h1>سياسة الخصوصية</h1>
+  <p class="date">آخر تحديث: ٢٤ أغسطس ٢٠٢٦</p>
+
+  <div class="lede">
+    <p>لا يحتوي Potionary على حساب ولا تسجيل دخول ولا خادم يخصّنا. يُحفَظ
+    تقدّمك على جهازك أنت. وتجمع البيانات ثلاثة أشياء: الإعلانات التي تموّل
+    اللعبة، وإحصاءات مجهولة عن المراحل التي يُنهيها اللاعبون، وتقارير
+    الأعطال التلقائية. ثلاثتها خدمات من Google، ولا يسألك أيٌّ منها عن شيء
+    يخصّك.</p>
+  </div>
+
+  <h2>الإعلانات</h2>
+  <p>يعرض التطبيق إعلانات توفّرها <strong>Google AdMob</strong>. ولاختيار هذه
+  الإعلانات وقياسها، تجمع Google:</p>
+  <ul>
+    <li>معرّفات الجهاز والمعرّف الإعلاني؛</li>
+    <li>الموقع التقريبي على مستوى المدينة، المستنتَج من عنوان IP؛</li>
+    <li>طريقة تفاعلك مع اللعبة ومع الإعلانات نفسها.</li>
+  </ul>
+  <p>تجمع Google هذه البيانات، لا نحن — فنحن لا نستلمها ولا نخزّنها أبدًا.
+  وتشرح Google ما تفعله بها في
+  <a href="https://policies.google.com/technologies/partner-sites">«كيف تستخدم
+  Google المعلومات من المواقع أو التطبيقات التي تستعمل خدماتها»</a>.</p>
+
+  <h2>خياراتك</h2>
+  <ul>
+    <li><strong>داخل اللعبة:</strong> افتح <strong>الإعدادات ← خيارات
+    الخصوصية</strong> متى شئت. يعيد ذلك فتح نموذج الموافقة الخاص بـ Google،
+    حيث يمكنك تغيير موافقتك على الإعلانات المخصّصة أو سحبها.</li>
+    <li><strong>على iOS:</strong> يطلب النظام إذن التتبّع قبل عرض أي إعلان
+    مخصّص. ويمكنك تغيير جوابك من <strong>الإعدادات ← الخصوصية والأمان ←
+    التتبّع</strong>.</li>
+    <li><strong>على Android:</strong> يمكنك إعادة تعيين معرّفك الإعلاني أو
+    حذفه من <strong>الإعدادات ← الخصوصية ← الإعلانات</strong>.</li>
+  </ul>
+  <p>سحب الموافقة لا يزيل الإعلانات، بل يجعلها غير مخصّصة.</p>
+
+  <h2>الإحصاءات وتقارير الأعطال</h2>
+  <p>في اللعبة خدمتان أخريان من Google، كلتاهما ضمن Firebase، ولا تتعرّف
+  أيٌّ منهما عليك:</p>
+  <ul>
+    <li><strong>Firebase Analytics</strong> — إحصاءات مجهولة عن اللعب: على أي
+    مرحلة كانت المحاولة، وكم حركة استغرقت، وهل انتهت أم تُركت، وأي الأدوات
+    استُخدمت، وهل عُرض إعلان حولها أم لا. تُسجَّل الأزمنة على شكل نطاقات لا
+    أوقات، ورصيد العملات على شكل
+    نطاقات لا أرقام دقيقة، فلا تستطيع هذه البيانات أن تقول متى لعبت ولا ماذا
+    كان لديك بالضبط.</li>
+    <li><strong>Firebase Crashlytics</strong> — تقارير الأعطال التلقائية: ما
+    الذي فشل وأي مسار من الشيفرة أدّى إليه. وهي السبيل الوحيد لاكتشاف خلل لا
+    يقع إلا على نوع واحد من الهواتف.</li>
+  </ul>
+  <p>لا تحمل أيٌّ منهما اسمك ولا بريدك ولا شيئًا كتبته ولا معرّفًا يتبعك إلى
+  تطبيق آخر. تُستخدَم لتحسين اللعبة فقط، ولا تُستخدَم في استهداف الإعلانات.</p>
+  <p>ولا يزال المطوّر بلا خادم خاص به ولا يحتفظ بأي ملف عنك. لا يوجد حاليًا
+  مفتاح داخل اللعبة لإيقاف هاتين الخدمتين؛ وحذف التطبيق يوقفهما.</p>
+
+  <h2>ما يُحفَظ على جهازك</h2>
+  <p>يُحفَظ تقدّمك في المراحل ونجومك وعملاتك وأدواتك وإعداداتك محليًا. وحذف
+  التطبيق يحذفها.</p>
+  <p>على Android، قد ينسخ <strong>النسخ الاحتياطي التلقائي</strong> التابع
+  للنظام ملفَّ الحفظ إلى حساب Google <em>الخاص بك</em> ليعود عند إعادة
+  التثبيت. تلك النسخة ملك لحسابك على Google؛ ولا يستطيع المطوّر رؤيتها ولا
+  استرجاعها.</p>
+
+  <h2>المشتريات</h2>
+  <p>يقدّم Potionary عملية شراء اختيارية واحدة تزيل الإعلانات التي تملأ الشاشة
+  بين المراحل. وتتولّى Google Play أو App Store المعاملة بالكامل. لا يرى
+  التطبيق تفاصيل الدفع أبدًا، ولا يُخزَّن منها شيء.</p>
+
+  <h2>الأطفال</h2>
+  <p>‏Potionary ليس موجّهًا إلى الأطفال دون سنّ ١٣، ولا نجمع بيانات منهم عن
+  علم.</p>
+
+  <h2>التغييرات</h2>
+  <p>إذا تغيّرت هذه السياسة، تغيّر التاريخ في الأعلى معها.</p>
+
+  <h2>للتواصل</h2>
+  <p class="contact"><a href="mailto:support@topjow.org">support@topjow.org</a></p>
+</main>
+
+<footer lang="en" dir="ltr">Potionary · published by Faiz Ahmad Daiee</footer>
+
+</div>
+
+<script>
+(function () {
+  var LANGS = ['en', 'fa', 'ar'];
+  var buttons = document.querySelectorAll('nav button');
+
+  function show(code) {
+    if (LANGS.indexOf(code) === -1) code = 'en';
+    LANGS.forEach(function (l) {
+      document.getElementById('doc-' + l).hidden = (l !== code);
+    });
+    buttons.forEach(function (b) {
+      b.setAttribute('aria-current', String(b.dataset.pick === code));
+    });
+    document.documentElement.lang = code;
+    document.documentElement.dir = (code === 'en') ? 'ltr' : 'rtl';
+    // The hash is what makes a single file citable three times over: the
+    // store listing for each language can point at its own URL.
+    if (location.hash.slice(1) !== code) history.replaceState(null, '', '#' + code);
+  }
+
+  buttons.forEach(function (b) {
+    b.addEventListener('click', function () { show(b.dataset.pick); });
+  });
+
+  // Editing the fragment in the address bar does not reload a page, so
+  // without this, arriving at #fa and then typing #ar changes the URL and
+  // nothing else.
+  window.addEventListener('hashchange', function () {
+    show(location.hash.slice(1));
+  });
+
+  var fromHash = location.hash.slice(1);
+  var fromBrowser = (navigator.language || 'en').slice(0, 2);
+  show(LANGS.indexOf(fromHash) !== -1 ? fromHash : fromBrowser);
+})();
+</script>
+</body>
+</html>
