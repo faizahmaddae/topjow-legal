@@ -9,6 +9,7 @@ thing to ask anyone to trust.
 |---|---|
 | آقا میرزا (Agha Mirza) — Persian word puzzle | <https://faizahmaddae.github.io/topjow-legal/aghamirza/> |
 | Potionary — potion-sorting puzzle | <https://faizahmaddae.github.io/topjow-legal/potionary/> |
+| گاد مافیا (God Mafia) — Mafia party-game moderator | <https://faizahmaddae.github.io/topjow-legal/godmafia/> |
 
 Contact: support@topjow.org
 
