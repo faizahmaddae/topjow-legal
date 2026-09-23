@@ -11,7 +11,7 @@ thing to ask anyone to trust.
 | Potionary — potion-sorting puzzle | <https://faizahmaddae.github.io/topjow-legal/potionary/> |
 | گاد مافیا (God Mafia) — Mafia party-game moderator | <https://faizahmaddae.github.io/topjow-legal/godmafia/> |
 | LebenTest — German citizenship-test preparation in Farsi and Dari | <https://faizahmaddae.github.io/topjow-legal/lebentest/> |
-| جدول (Jadval) — Persian arrowword puzzles | <https://faizahmaddae.github.io/topjow-legal/jadval/> |
+| کافه جدول (Cafe Jadval) — Persian arrowword puzzles | <https://faizahmaddae.github.io/topjow-legal/jadval/> |
 
 Contact: support@topjow.org
 

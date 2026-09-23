@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy – جدول (Jadval), Persian arrowword puzzles</title>
-<meta name="description" content="Privacy policy of the game «جدول» (Jadval): no account, no server of our own, every board and every letter you type stays on your device, Firebase Analytics and Crashlytics with a closed event list, rewarded video ads only.">
+<title>Privacy Policy – کافه جدول (Cafe Jadval), Persian arrowword puzzles</title>
+<meta name="description" content="Privacy policy of the game «کافه جدول» (Cafe Jadval): no account, no server of our own, every board and every letter you type stays on your device, Firebase Analytics and Crashlytics with a closed event list, rewarded video ads only.">
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="https://faizahmaddae.github.io/topjow-legal/jadval/">
 <link rel="alternate" hreflang="en" href="https://faizahmaddae.github.io/topjow-legal/jadval/">
@@ -16,7 +16,7 @@
 
 <header class="site">
   <div class="site-inner">
-    <a class="brand" href="index.html">جدول <span>· Jadval</span></a>
+    <a class="brand" href="index.html">کافه جدول <span>· Cafe Jadval</span></a>
     <nav class="langs" aria-label="Language and document">
       <a href="index.html" aria-current="page" hreflang="en">Privacy</a>
       <a href="terms.html" hreflang="en">Terms</a>
@@ -28,7 +28,7 @@
 <main class="wrap">
 
   <h1>Privacy Policy</h1>
-  <p class="meta">Game «جدول» (Jadval) — Persian arrowword puzzles · <code>com.topjow.jadval</code> · for Android and iOS<br>Last updated: 22 September 2026</p>
+  <p class="meta">Game «کافه جدول» (Cafe Jadval) — Persian arrowword puzzles · <code>com.topjow.jadval</code> · for Android and iOS<br>Last updated: 22 September 2026</p>
 
   <div class="summary">
     <h2>In short</h2>
@@ -36,7 +36,7 @@
       <li>There is <strong>no account and no sign-in</strong>. The game never asks who you are.</li>
       <li>There is <strong>no server of our own</strong>. Every puzzle ships inside the app; nothing is downloaded and the game works offline.</li>
       <li><strong>Every letter you type, every hint and every solved board stays on your device</strong> and is never transmitted.</li>
-      <li>The published version sends <strong>crash reports and a short, fixed list of usage events</strong> to Firebase. Neither ever contains an answer, a letter you typed, or a clue.</li>
+      <li>The published version sends <strong>crash reports and a short, fixed list of usage events</strong> to Firebase. Neither ever contains an answer, a letter you typed, or a clue, and one switch in <em>Settings → About</em> turns both off.</li>
       <li>Ads are <strong>rewarded videos only</strong> — you start them yourself to earn coins, they never interrupt a puzzle, and none is ever shown before your fourth puzzle.</li>
       <li>The only thing sold is <strong>coins</strong>. Every puzzle is free. The app store handles payment; we never see it.</li>
     </ul>
@@ -96,8 +96,9 @@
       added or removed).</li>
       <li><strong>Your settings.</strong> Language, light or dark theme, text
       size, sounds, haptics, error checking, whether the timer is shown, whether
-      the daily reminder is on, whether onboarding is finished, and how many
-      puzzles you have started.</li>
+      the daily reminder is on, whether crash reports and usage statistics are
+      allowed, whether onboarding is finished, and how many puzzles you have
+      started.</li>
       <li><strong>Ad bookkeeping.</strong> When a rewarded video last paid out,
       and any reward that was earned but not yet credited.</li>
     </ul>
@@ -117,7 +118,7 @@
     <h2>3. Usage events (Google Analytics for Firebase)</h2>
     <p>To see which puzzles players get stuck on and where they give up, the
     published version of the game sends a short, fixed list of events to Google
-    Analytics for Firebase.</p>
+    Analytics for Firebase, unless you turn it off (see the box below).</p>
     <p><strong>What is never sent:</strong> an answer, a letter you typed, a
     clue, the contents of a board, or anything else you wrote. The list of
     events is closed — it is written out in one file in the source code, and an
@@ -128,9 +129,9 @@
       <table>
         <thead><tr><th>Event</th><th>What is sent with it</th></tr></thead>
         <tbody>
-          <tr><td><code>puzzle_opened</code></td><td>the puzzle's catalogue id</td></tr>
-          <tr><td><code>puzzle_solved</code></td><td>the puzzle's catalogue id, seconds taken</td></tr>
-          <tr><td><code>puzzle_abandoned</code></td><td>the puzzle's catalogue id, how full the grid was as a percentage, seconds, number of hints used</td></tr>
+          <tr><td><code>puzzle_opened</code></td><td>the puzzle's catalogue id; for a chapter board, its chapter id and stage number; whether you were picking up a board you had already started</td></tr>
+          <tr><td><code>puzzle_solved</code></td><td>the puzzle's catalogue id; for a chapter board, its chapter id and stage number; seconds taken; number of hints used; whether this was the first time it was solved</td></tr>
+          <tr><td><code>puzzle_abandoned</code></td><td>the puzzle's catalogue id; for a chapter board, its chapter id and stage number; how full the grid was as a percentage; seconds; number of hints used; the position of the word that was selected when you left the board, if any — its direction and first cell, such as <code>left-1-4</code>, which with the puzzle id names a clue in the catalogue that ships inside every copy of the app, the same for every player and nothing you typed; whether the free clue explanation was opened during that attempt (0 or 1)</td></tr>
           <tr><td><code>stage_blocked</code></td><td>chapter id, stage number, the stage that had to be solved first</td></tr>
           <tr><td><code>daily_opened</code></td><td>the date of the daily board, as a plain date</td></tr>
           <tr><td><code>hint_purchased</code></td><td>which kind of hint: letter or word</td></tr>
@@ -150,22 +151,32 @@
     <code>daily</code>, <code>daily_stage</code>, <code>shop</code>,
     <code>settings</code>, <code>onboarding</code> — and never a board id.</p>
     <p>The Firebase SDK itself then collects technical information the game does
-    not control: a randomly generated app-instance identifier, device model,
-    operating system version, language, app version, and a country derived from
-    the IP address. Google uses the IP address for that derivation and does not
-    keep it in the Analytics reports. <strong>No advertising identifier is read
-    for Analytics.</strong></p>
+    not control: a randomly generated app-instance identifier, its standard
+    automatic events (first open, session start, app update), device model,
+    operating system version, language, app version, and an approximate
+    location, such as country and region, derived from the IP address. Google
+    uses the IP address for that derivation and does not keep it in the
+    Analytics reports. No precise location is collected: the game has no
+    location permission. <strong>No advertising identifier is read for
+    Analytics.</strong></p>
+    <p><strong>Coin purchases.</strong> <code>coins_purchased</code> and
+    <code>coins_purchase_failed</code> name the coin pack by its store product
+    id (see <a href="#purchase">section 6</a>). Separately, Google Analytics
+    records in-app purchases made through the App Store or Google Play on its
+    own, as Google documents: the product, its name and its price. The payment
+    itself — card, name, address — stays with Apple or Google.</p>
     <p><strong>Legal basis:</strong> Art. 6(1)(f) GDPR — the legitimate interest
     in improving a game that is given away free. You can object at any time
     (Art. 21 GDPR); see <a href="#rights">section 11</a> for how.</p>
-    <div class="flag">
-      <p><strong>An honest limitation.</strong> This version of the game has
-      <em>no switch in its settings</em> that turns usage events off. If you do
-      not want them sent, the routes available to you today are to uninstall the
-      game, or to write to <a href="mailto:support@topjow.org">support@topjow.org</a>
-      and ask for deletion — we act on such a request. An in-app switch is
-      planned; until it exists, this paragraph is the accurate answer rather
-      than a promise the app does not keep.</p>
+    <div class="card">
+      <p><strong>Turning it off.</strong> <em>Settings → About</em> has one
+      switch, “Crash reports and usage statistics”, which is on when you install
+      the game. Turning it off stops both the usage events described here and the
+      crash reports in <a href="#crashlytics">section 4</a> at once, and deletes
+      any crash report not yet sent. Turning it back on applies from the next
+      time you start the game. To have data that was already sent deleted, write
+      to <a href="mailto:support@topjow.org">support@topjow.org</a> — we act on
+      such a request.</p>
     </div>
     <p><strong>Processor:</strong> Google Ireland Limited, Gordon House, Barrow
     Street, Dublin 4, Ireland.</p>
@@ -174,14 +185,20 @@
   <section id="crashlytics">
     <h2>4. Crash reports (Firebase Crashlytics)</h2>
     <p>When the game crashes or hits an error it did not expect, a report goes
-    to Firebase Crashlytics. It contains the error type and message, the stack
-    trace, a short label saying which part of the code was running, the device
-    model, the operating system version, the app version, the time, and an
-    installation identifier generated by Crashlytics itself.</p>
-    <p>It also carries one label of ours, <code>build_channel</code>, which says
-    whether this is a test build or the published one. That is the only custom
-    value attached, it comes from a fixed list of two, and it is never anything
-    you wrote.</p>
+    to Firebase Crashlytics. It contains the error type, the stack trace, a
+    short label saying which part of the code was running, the device model,
+    the operating system version, the app version, the time, and an
+    installation identifier generated by Crashlytics itself. The error's message
+    is included only for a crash, and even then not for the kinds of error
+    (input and database errors) whose message could repeat what you typed; an
+    error the game caught and handled is sent as its type alone. A report can
+    also include a few short notes that the game's own code wrote earlier in the
+    same session.</p>
+    <p>It also carries two labels of ours: <code>build_channel</code>, which
+    says whether this is a test build or the published one, and
+    <code>screen</code>, which of the nine screen names listed in section 3 you
+    were on. Those are the only custom values attached, both come from fixed
+    lists, and neither is ever anything you wrote.</p>
     <p>Your puzzles, your letters and your coins are not part of a crash
     report.</p>
     <p>The installation identifier is not the advertising identifier, is not
@@ -190,8 +207,9 @@
     <p><strong>Legal basis:</strong> Art. 6(1)(f) GDPR — the legitimate interest
     in finding and fixing crashes. A puzzle game that loses your board when it
     crashes is worth nothing, and without these reports we would not know it had
-    happened. The same limitation as in section 3 applies: there is no in-app
-    switch yet.</p>
+    happened. The switch described in section 3, <em>Settings → About →
+    “Crash reports and usage statistics”</em>, turns crash reports off as
+    well.</p>
     <p><strong>Processor:</strong> Google Ireland Limited (address as above).</p>
   </section>
 
@@ -209,8 +227,9 @@
       coins can also be earned by playing.</li>
     </ul>
     <p>To serve and measure an ad, Google processes among other things the
-    device's advertising identifier, the IP address, device type and operating
-    system, an approximate country, and your interaction with the ad. Google
+    device's advertising identifier (Android's advertising ID, or on iOS the
+    IDFA where you allow it), the IP address, device type and operating system,
+    an approximate location, and your interaction with the ad. Google
     publishes the details and the list of advertising partners itself:
     <a href="https://business.safety.google/privacy/" rel="noopener">business.safety.google/privacy</a>
     and <a href="https://support.google.com/admob/answer/9012903" rel="noopener">Google's GDPR notes for AdMob</a>.</p>
@@ -228,7 +247,7 @@
     websites. The game shows a short screen of its own first, in your own
     language, explaining what is about to be asked; the decision itself belongs
     in Apple's dialog, not in ours. Your answer decides whether AdMob may use
-    the iPhone's advertising identifier. Declining takes nothing away from the
+    your device's advertising identifier (the IDFA). Declining takes nothing away from the
     game. You can change it later under <em>Settings → Privacy &amp; Security →
     Tracking</em>.</p>
     <p><strong>Legal basis:</strong> your consent, Art. 6(1)(a) GDPR and
@@ -254,8 +273,10 @@
     </ul>
     <p>The purchase itself is handled entirely by Apple's App Store or Google
     Play. <strong>The developer receives no payment data</strong> — no card
-    number, no name, no address. The game only writes a local row saying that
-    coins arrived. From the stores the developer receives aggregated sales and
+    number, no name, no address. On your device the game only writes a row
+    saying that coins arrived; unless you have turned usage statistics off,
+    Analytics also learns which pack was bought and, as Google documents, the
+    product's name and price (<a href="#analytics">section 3</a>). From the stores the developer receives aggregated sales and
     payout reports that do not identify you.</p>
     <p>Coins are consumable: they are spent, they live only on your device, and
     there is no purchase history to replay to rebuild a balance. See the
@@ -279,7 +300,9 @@
     <h2>8. What the game does not do</h2>
     <ul>
       <li>No account, no registration, no email address, no password.</li>
-      <li>No access to location, contacts, camera, microphone, photos or files.</li>
+      <li>No access to location, contacts, camera, microphone, photos or files:
+      the game asks for none of those permissions. (The approximate location in
+      sections 3 and 5 is Google's estimate from the IP address.)</li>
       <li>No push notifications and no messages from us.</li>
       <li>No server of our own: every puzzle is inside the app and nothing is
       downloaded. The game works fully offline.</li>
@@ -306,11 +329,6 @@
     EU-US Data Privacy Framework and/or on the European Commission's Standard
     Contractual Clauses, which form part of their respective terms. The
     developer is himself resident in the United States.</p>
-    <p class="note small">The app bundle also contains a purchase framework from
-    RevenueCat that the published build cannot start — it is reachable only in a
-    development build, and the code that would construct it is switched off
-    outside one. It is named here because a careful reader can find it inside
-    the app, not because it processes anything about you.</p>
   </section>
 
   <section id="retention">
@@ -342,9 +360,10 @@
     <ul>
       <li><strong>Delete everything the game knows:</strong> uninstall it. All
       local data goes, including unspent coins.</li>
-      <li><strong>Object to analytics and crash reports:</strong> write to
-      <a href="mailto:support@topjow.org">support@topjow.org</a>. There is no
-      in-app switch yet — see the note in section 3.</li>
+      <li><strong>Stop analytics and crash reports:</strong> turn off
+      <em>Settings → About → “Crash reports and usage statistics”</em> (see
+      section 3). To object, or to have what was already sent deleted, write to
+      <a href="mailto:support@topjow.org">support@topjow.org</a>.</li>
       <li><strong>Change or withdraw ad consent:</strong> <em>Settings → “Ad
       settings”</em>, where consent applies.</li>
       <li><strong>Reset your advertising identifier</strong> or turn off
@@ -399,7 +418,7 @@
        <a href="privacy-fa.html" lang="fa">فارسی / دری</a> ·
        <a href="../">All apps</a></p>
     <p>Contact: <a href="mailto:support@topjow.org">support@topjow.org</a></p>
-    <p class="small">«جدول» is an original Persian arrowword game. Its boards,
+    <p class="small">«کافه جدول» (Cafe Jadval) is an original Persian arrowword game. Its boards,
     clues and artwork are the developer's own work.</p>
   </div>
 </footer>
