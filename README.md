@@ -12,6 +12,7 @@ thing to ask anyone to trust.
 | گاد مافیا (God Mafia) — Mafia party-game moderator | <https://faizahmaddae.github.io/topjow-legal/godmafia/> |
 | LebenTest — German citizenship-test preparation in Farsi and Dari | <https://faizahmaddae.github.io/topjow-legal/lebentest/> |
 | کافه جدول (Cafe Jadval) — Persian arrowword puzzles | <https://faizahmaddae.github.io/topjow-legal/jadval/> |
+| SafeCalc+ Private Album / گالری مخفی (Hidden Gallery) — private photo and video vault | <https://faizahmaddae.github.io/topjow-legal/hiddengallery/support.html> |
 
 Contact: support@topjow.org
 
@@ -24,6 +25,11 @@ because it sells a consumable currency: `jadval/index.html` and
 `jadval/terms.html` in English, `privacy-fa.html` and `terms-fa.html` in
 فارسی/دری. Those four URLs are the app's `PRIVACY_URL` and `TERMS_URL`
 build inputs.
+
+Hidden Gallery has support pages only — `hiddengallery/support.html` in English,
+`support-fa.html`, `support-ar.html` and `support-es.html` — because its privacy
+policy is still served from `topjow.org/privacy.php?id=com.webjow.hidden_gallery`.
+The English page is the App Store Support URL.
 
 Potionary's page is trilingual — English, فارسی, العربية — and picks a language
 from the URL fragment: `#en`, `#fa`, `#ar`. LebenTest provides separate,
