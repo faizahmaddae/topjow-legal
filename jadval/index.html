@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy – کافه جدول (Cafe Jadval), Persian arrowword puzzles</title>
-<meta name="description" content="Privacy policy of the game «کافه جدول» (Cafe Jadval): no account, no server of our own, every board and every letter you type stays on your device, Firebase Analytics and Crashlytics with a closed event list, rewarded video ads only.">
+<meta name="description" content="Privacy policy of the game «کافه جدول» (Cafe Jadval): no account, no server of our own, every board and every letter you type stays on your device, Firebase Analytics and Crashlytics with a closed event list, rewarded video ads and, from version 1.1, an occasional full-screen ad between puzzles.">
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="https://faizahmaddae.github.io/topjow-legal/jadval/">
 <link rel="alternate" hreflang="en" href="https://faizahmaddae.github.io/topjow-legal/jadval/">
@@ -29,7 +29,7 @@
 <main class="wrap">
 
   <h1>Privacy Policy</h1>
-  <p class="meta">Game «کافه جدول» (Cafe Jadval) — Persian arrowword puzzles · <code>com.topjow.jadval</code> · for Android and iOS<br>Last updated: 24 September 2026</p>
+  <p class="meta">Game «کافه جدول» (Cafe Jadval) — Persian arrowword puzzles · <code>com.topjow.jadval</code> · for Android and iOS<br>Last updated: 2 October 2026</p>
 
   <div class="summary">
     <h2>In short</h2>
@@ -38,7 +38,7 @@
       <li>There is <strong>no server of our own</strong>. Every puzzle ships inside the app; nothing is downloaded and the game works offline.</li>
       <li><strong>Every letter you type, every hint and every solved board stays on your device</strong> and is never transmitted.</li>
       <li>The published version sends <strong>crash reports and a short, fixed list of usage events</strong> to Firebase. Neither ever contains an answer, a letter you typed, or a clue, and one switch in <em>Settings → About</em> turns both off.</li>
-      <li>Ads are <strong>rewarded videos only</strong> — you start them yourself to earn coins, they never interrupt a puzzle, and none is ever shown before your fourth puzzle.</li>
+      <li>Ads are <strong>rewarded videos</strong> you start yourself to earn coins and, from version 1.1, <strong>an occasional full-screen ad between puzzles</strong>, only as you leave a puzzle you have solved. No ad ever interrupts a puzzle, and none is shown before your fourth puzzle.</li>
       <li>The only thing sold is <strong>coins</strong>. Every puzzle is free. The app store handles payment; we never see it.</li>
     </ul>
   </div>
@@ -101,7 +101,9 @@
       allowed, whether onboarding is finished, and how many puzzles you have
       started.</li>
       <li><strong>Ad bookkeeping.</strong> When a rewarded video last paid out,
-      and any reward that was earned but not yet credited.</li>
+      any reward that was earned but not yet credited, and the times of the
+      full-screen ads shown in the last hour, so that they stay spaced
+      out.</li>
     </ul>
     <p>There is no player id anywhere in that database. The coin account is
     written as a single row with a fixed key, because there is only ever one
@@ -125,7 +127,7 @@
     events is closed — it is written out in one file in the source code, and an
     automated test fails the build if an event is ever sent carrying the
     solution letters of the board being played. Nothing here is free text.</p>
-    <p>This is the complete list, all thirteen of them:</p>
+    <p>This is the complete list, all fourteen of them:</p>
     <div class="table-scroll">
       <table>
         <thead><tr><th>Event</th><th>What is sent with it</th></tr></thead>
@@ -136,13 +138,14 @@
           <tr><td><code>stage_blocked</code></td><td>chapter id, stage number, the stage that had to be solved first</td></tr>
           <tr><td><code>daily_opened</code></td><td>the date of the daily board, as a plain date</td></tr>
           <tr><td><code>hint_purchased</code></td><td>which kind of hint: letter or word</td></tr>
-          <tr><td><code>reward_earned</code></td><td>nothing</td></tr>
+          <tr><td><code>reward_earned</code></td><td>from version 1.1, which offer the video was watched from: <code>coins</code> (the coins card in the shop or the hint sheet), <code>victory</code> (doubling a solved puzzle's coins) or <code>gift</code> (doubling the daily gift)</td></tr>
           <tr><td><code>ad_request_result</code></td><td>whether an ad loaded, and the reason if it did not</td></tr>
           <tr><td><code>ad_show_result</code></td><td>how the ad ended, and a short reason code</td></tr>
           <tr><td><code>coins_purchased</code></td><td>which coin pack</td></tr>
           <tr><td><code>coins_purchase_failed</code></td><td>which coin pack, and the store's reason code</td></tr>
           <tr><td><code>onboarding_step</code></td><td>the name of the step reached</td></tr>
           <tr><td><code>onboarding_done</code></td><td>whether onboarding was finished or skipped</td></tr>
+          <tr><td><code>clue_reported</code></td><td>from version 1.1, only when you tap “Report” beside a clue and pick a reason: the puzzle's catalogue id (for a daily board, the board of that day, not the date), the position of that clue's word, such as <code>left-1-4</code>, and the reason you picked — <code>ambiguous</code>, <code>wrong</code> or <code>unfamiliar</code>. No text is sent: the three reasons are buttons, and the button is not offered while usage statistics are switched off.</td></tr>
         </tbody>
       </table>
     </div>
@@ -216,16 +219,25 @@
 
   <section id="ads">
     <h2>5. Ads (Google AdMob) and your consent</h2>
-    <p>The game can show <strong>rewarded video ads, and nothing else</strong>.
-    There is no banner, no full-screen ad between puzzles, and no ad when you
-    open the app. The rules are part of the product, not a preference:</p>
+    <p>The game can show two kinds of ad and no others: <strong>rewarded
+    videos</strong> and, from version 1.1, <strong>an occasional full-screen ad
+    between puzzles</strong> (an “interstitial”). There is no banner and no ad
+    when you open the app. The rules are part of the product, not a
+    preference:</p>
     <ul>
       <li>a rewarded video plays only when <strong>you</strong> choose to start
       one, to earn coins;</li>
+      <li>a full-screen ad can appear only as you leave a puzzle you have just
+      solved, before the next screen opens: never within your first five
+      solved puzzles, at most once in every three puzzles you solve, and each
+      time at least three minutes after the last;</li>
       <li><strong>no ad is ever shown before your fourth puzzle</strong>;</li>
       <li>nothing interrupts a board you are solving;</li>
-      <li>an ad never stands between you and a puzzle: every board is free, and
-      coins can also be earned by playing.</li>
+      <li>no puzzle is ever locked behind an ad: every board is free, and coins
+      can also be earned by playing;</li>
+      <li>the game asks Google only for ads rated suitable for general audiences
+      with parental guidance (“PG”) — nothing rated for teens or for mature
+      audiences.</li>
     </ul>
     <p>To serve and measure an ad, Google processes among other things the
     device's advertising identifier (Android's advertising ID, or on iOS the
@@ -272,9 +284,8 @@
       <li><code>jadval_coins_600</code> — 600 coins</li>
       <li><code>jadval_coins_1500</code> — 1500 coins</li>
     </ul>
-    <p><strong>None of them is on sale at the moment:</strong> coins come only
-    from playing. The rest of this section describes what happens once they
-    are.</p>
+    <p>They are sold in the Android version, and in the iPhone and iPad version
+    from version 1.1. Coins can also be earned by playing.</p>
     <p>The purchase itself is handled entirely by Apple's App Store or Google
     Play. <strong>The developer receives no payment data</strong> — no card
     number, no name, no address. On your device the game only writes a row
