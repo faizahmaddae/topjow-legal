@@ -12,6 +12,7 @@ thing to ask anyone to trust.
 | گاد مافیا (God Mafia) — Mafia party-game moderator | <https://faizahmaddae.github.io/topjow-legal/godmafia/> |
 | LebenTest — German citizenship-test preparation in Farsi and Dari | <https://faizahmaddae.github.io/topjow-legal/lebentest/> |
 | کافه جدول (Cafe Jadval) — Persian arrowword puzzles | <https://faizahmaddae.github.io/topjow-legal/jadval/> |
+| Story Studio / استوری استودیو — text on photos, posts and stories | <https://faizahmaddae.github.io/topjow-legal/storystudio/> |
 | SafeCalc+ Private Album / گالری مخفی (Hidden Gallery) — private photo and video vault | <https://faizahmaddae.github.io/topjow-legal/hiddengallery/support.html> |
 
 Contact: support@topjow.org
