@@ -13,6 +13,7 @@ thing to ask anyone to trust.
 | LebenTest — German citizenship-test preparation in Farsi and Dari | <https://faizahmaddae.github.io/topjow-legal/lebentest/> |
 | کافه جدول (Cafe Jadval) — Persian arrowword puzzles | <https://faizahmaddae.github.io/topjow-legal/jadval/> |
 | Story Studio / استوری استودیو — text on photos, posts and stories | <https://faizahmaddae.github.io/topjow-legal/storystudio/> |
+| Roadstart — Maryland and Virginia permit-test preparation in six languages | <https://faizahmaddae.github.io/topjow-legal/roadstart/> |
 | SafeCalc+ Private Album / گالری مخفی (Hidden Gallery) — private photo and video vault | <https://faizahmaddae.github.io/topjow-legal/hiddengallery/support.html> |
 
 Contact: support@topjow.org
@@ -26,6 +27,12 @@ because it sells a consumable currency: `jadval/index.html` and
 `jadval/terms.html` in English, `privacy-fa.html` and `terms-fa.html` in
 فارسی/دری. Those four URLs are the app's `PRIVACY_URL` and `TERMS_URL`
 build inputs.
+
+Roadstart's folder is generated: `roadstart/index.html` is the app and support
+page (also the link the app's "Tell a friend" button sends), `privacy.html` the
+privacy policy and `terms.html` the terms of use, in English. Their source is
+`docs/legal/` in the app's repository; `python3 tool/build_site.py` there
+rebuilds `site/roadstart/`, which is copied here. Do not edit them by hand.
 
 Hidden Gallery has support pages only — `hiddengallery/support.html` in English,
 `support-fa.html`, `support-ar.html` and `support-es.html` — because its privacy
