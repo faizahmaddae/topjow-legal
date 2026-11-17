@@ -11,6 +11,7 @@ thing to ask anyone to trust.
 | Potionary — potion-sorting puzzle | <https://faizahmaddae.github.io/topjow-legal/potionary/> |
 | گاد مافیا (God Mafia) — Mafia party-game moderator | <https://faizahmaddae.github.io/topjow-legal/godmafia/> |
 | LebenTest — German citizenship-test preparation in Farsi and Dari | <https://faizahmaddae.github.io/topjow-legal/lebentest/> |
+| Almaniyar / آلمانی‌یار — German course for Persian and Dari speakers | <https://faizahmaddae.github.io/topjow-legal/almaniyar/> |
 | کافه جدول (Cafe Jadval) — Persian arrowword puzzles | <https://faizahmaddae.github.io/topjow-legal/jadval/> |
 | Story Studio / استوری استودیو — text on photos, posts and stories | <https://faizahmaddae.github.io/topjow-legal/storystudio/> |
 | Roadstart — Maryland and Virginia permit-test preparation in six languages | <https://faizahmaddae.github.io/topjow-legal/roadstart/> |
@@ -42,6 +43,9 @@ The English page is the App Store Support URL.
 Potionary's page is trilingual — English, فارسی, العربية — and picks a language
 from the URL fragment: `#en`, `#fa`, `#ar`. LebenTest provides separate,
 directly linkable English, German and فارسی/دری policy pages in its folder.
+Almaniyar does the same (`privacy-en.html`, `privacy-de.html`,
+`privacy-fa.html`; `index.html` is the English policy with a language box)
+and adds `impressum.html`.
 
 **`potionary-site` must not be deleted until Potionary's own Play listing has
 been pointed here.** That app is published, and a published app whose privacy
