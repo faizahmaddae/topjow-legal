@@ -16,6 +16,7 @@ thing to ask anyone to trust.
 | Story Studio / استوری استودیو — text on photos, posts and stories | <https://faizahmaddae.github.io/topjow-legal/storystudio/> |
 | Roadstart — Maryland and Virginia permit-test preparation in six languages | <https://faizahmaddae.github.io/topjow-legal/roadstart/> |
 | SafeCalc+ Private Album / گالری مخفی (Hidden Gallery) — private photo and video vault | <https://faizahmaddae.github.io/topjow-legal/hiddengallery/support.html> |
+| مصارف (Masaref) — simple income and expense tracker in Dari, Persian and English | <https://faizahmaddae.github.io/topjow-legal/masaref/> |
 
 Contact: support@topjow.org
 
@@ -46,6 +47,10 @@ directly linkable English, German and فارسی/دری policy pages in its fold
 Almaniyar does the same (`privacy-en.html`, `privacy-de.html`,
 `privacy-fa.html`; `index.html` is the English policy with a language box)
 and adds `impressum.html`.
+
+Masaref has an English policy (`masaref/index.html`) and one in فارسی/دری
+(`masaref/privacy-fa.html`). Their source is `store/legal/` in the app's
+repository (faizahmaddae/masaref).
 
 **`potionary-site` must not be deleted until Potionary's own Play listing has
 been pointed here.** That app is published, and a published app whose privacy
